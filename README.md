@@ -54,7 +54,7 @@ int main()
 
 ### 6-1. algorithm
 
-```
+```cpp
 // algorithm 헤더파일
 #include <algorithm>
 using namespace std;
@@ -82,7 +82,7 @@ upper_bound();
 
 ### 6-2. vector
 
-```
+```cpp
 // vector 헤더파일
 #include <vector>
 using namespace std;
