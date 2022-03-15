@@ -1,5 +1,7 @@
 ## Algorithm-Note
 
+알고리즘 노트 (대회 준비 용, ACM-ICPC Team Note)
+
 * Euichan Jeong (정의찬)
   * Baekjoon OJ : [define_chan](https://www.acmicpc.net/user/define_chan)
   * Atcoder : [defineChan](https://atcoder.jp/)
