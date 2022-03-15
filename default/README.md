@@ -5,8 +5,7 @@
 ```cpp
 #include <stdio.h>
 #include <string.h>
-#include <stack>
-#include <queue>
+#include <stack>#include <queue>
 #include <deque>
 #include <vector>
 #include <string>
