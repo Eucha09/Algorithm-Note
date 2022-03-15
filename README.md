@@ -59,25 +59,28 @@ int main()
 #include <algorithm>
 using namespace std;
 
-sort();
+int main()
+{
+  sort();
 
-reverse();
+  reverse();
 
-swap();
+  swap();
 
-min();
+  min();
 
-max();
+  max();
 
-min_element();
+  min_element();
 
-max_element();
+  max_element();
 
-binary_search();
+  binary_search();
 
-lower_bound();
+  lower_bound();
 
-upper_bound();
+  upper_bound();
+}
 ```
 
 ### 6-2. vector
@@ -87,45 +90,50 @@ upper_bound();
 #include <vector>
 using namespace std;
 
-// vector 생성
-vector<int> v;
+int idx, value;
 
-// 길이가 5인 vector 생성
-vector<int> v(5);
+int main()
+{
+  // vector 생성
+  vector<int> v;
 
-// 길이가 5면서 1로 초기화된 vector 생성
-vector<int> v(5, 1);
+  // 길이가 5인 vector 생성
+  vector<int> v(5);
 
-// v를 복사한 vector 생성
-vector<int> v2(v);
+  // 길이가 5면서 1로 초기화된 vector 생성
+  vector<int> v(5, 1);
 
-// idx번째 원소 참조
-v[idx];
+  // v를 복사한 vector 생성
+  vector<int> v2(v);
 
-// 첫 번째 원소 반환
-v.front();
+  // idx번째 원소 참조
+  v[idx];
 
-// 마지막 원소 반환
-v.back();
+  // 첫 번째 원소 반환
+  v.front();
 
-// 마지막 원소 뒤에 value 삽입
-v.push_back(value);
+  // 마지막 원소 반환
+  v.back();
 
-// 마지막 원소 제거
-v.pop_back();
+  // 마지막 원소 뒤에 value 삽입
+  v.push_back(value);
 
-// 모든 원소 제거
-v.clear();
+  // 마지막 원소 제거
+  v.pop_back();
 
-// vector 길이 반환
-v.size();
+  // 모든 원소 제거
+  v.clear();
 
-// vector가 비어있다면(size가 0) true 반환
-v.empty();
+  // vector 길이 반환
+  v.size();
 
-// vector 첫 번째 위치 주소를 반환
-v.begin();
+  // vector가 비어있다면(size가 0) true 반환
+  v.empty();
 
-// vector 마지막 위치의 다음 주소를 반환
-v.end();
+  // vector 첫 번째 위치 주소를 반환
+  v.begin();
+
+  // vector 마지막 위치의 다음 주소를 반환
+  v.end();`
+}
 ```
