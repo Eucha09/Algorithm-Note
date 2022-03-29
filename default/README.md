@@ -2,7 +2,7 @@
 
 ### Contens
 
-1. Template
+1. [Template](https://github.com/Eucha09/Algorithm-Note/tree/main/default#0-1-template)
 
 ### 0-1. Template
 

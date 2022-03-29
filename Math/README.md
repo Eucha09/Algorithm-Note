@@ -2,8 +2,8 @@
 
 ### Contens
 
-1. 에라토스테네스의 체
-1. 좌표 압축
+1. [에라토스테네스의 체](https://github.com/Eucha09/Algorithm-Note/tree/main/Math#1-1-%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98-%EC%B2%B4)
+1. [좌표 압축](https://github.com/Eucha09/Algorithm-Note/tree/main/Math#1-2-%EC%A2%8C%ED%91%9C-%EC%95%95%EC%B6%95)
 
 ### 1-1. 에라토스테네스의 체
 
