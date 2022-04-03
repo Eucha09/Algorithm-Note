@@ -7,8 +7,8 @@
 1. [stack](https://github.com/Eucha09/Algorithm-Note/tree/main/C%2B%2BSTL#6-3-stack)
 1. [queue](https://github.com/Eucha09/Algorithm-Note/tree/main/C%2B%2BSTL#6-4-queue)
 1. [deque](https://github.com/Eucha09/Algorithm-Note/tree/main/C%2B%2BSTL#6-5-deque)
-1. [string]()
-1. [map]()
+1. [string](https://github.com/Eucha09/Algorithm-Note/tree/main/C%2B%2BSTL#6-6-string)
+1. [map](https://github.com/Eucha09/Algorithm-Note/tree/main/C%2B%2BSTL#6-7-map)
 
 ### 6-1. algorithm
 
