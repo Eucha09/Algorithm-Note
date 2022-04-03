@@ -4,11 +4,11 @@
 
 1. [에라토스테네스의 체](https://github.com/Eucha09/Algorithm-Note/tree/main/Math#1-1-%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98-%EC%B2%B4)
 1. [좌표 압축](https://github.com/Eucha09/Algorithm-Note/tree/main/Math#1-2-%EC%A2%8C%ED%91%9C-%EC%95%95%EC%B6%95)
-1. [유클리드 호제법(최대공약수 최소공배수)]()
-1. [이항 계수(DP)]()
-1. [이항 계수(거듭제곱, 페르마의 소정리)]()
-1. [행렬 거듭제곱]()
-1. [피보나치 수열(행렬 거듭제곱)]()
+1. [유클리드 호제법(최대공약수 최소공배수)](https://github.com/Eucha09/Algorithm-Note/tree/main/Math#1-3-%EC%9C%A0%ED%81%B4%EB%A6%AC%EB%93%9C-%ED%98%B8%EC%A0%9C%EB%B2%95%EC%B5%9C%EB%8C%80%EA%B3%B5%EC%95%BD%EC%88%98-%EC%B5%9C%EC%86%8C%EA%B3%B5%EB%B0%B0%EC%88%98)
+1. [이항 계수(DP)](https://github.com/Eucha09/Algorithm-Note/tree/main/Math#1-4-%EC%9D%B4%ED%95%AD-%EA%B3%84%EC%88%98dp)
+1. [이항 계수(거듭제곱, 페르마의 소정리)](https://github.com/Eucha09/Algorithm-Note/tree/main/Math#1-5-%EC%9D%B4%ED%95%AD-%EA%B3%84%EC%88%98%EA%B1%B0%EB%93%AD%EC%A0%9C%EA%B3%B1-%ED%8E%98%EB%A5%B4%EB%A7%88%EC%9D%98-%EC%86%8C%EC%A0%95%EB%A6%AC)
+1. [행렬 거듭제곱](https://github.com/Eucha09/Algorithm-Note/tree/main/Math#1-6-%ED%96%89%EB%A0%AC-%EA%B1%B0%EB%93%AD%EC%A0%9C%EA%B3%B1)
+1. [피보나치 수열(행렬 거듭제곱)](https://github.com/Eucha09/Algorithm-Note/tree/main/Math#1-7-%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98-%EC%88%98%EC%97%B4%ED%96%89%EB%A0%AC-%EA%B1%B0%EB%93%AD%EC%A0%9C%EA%B3%B1)
 
 ### 1-1. 에라토스테네스의 체
 
@@ -99,17 +99,17 @@ int solve(int n, int k)
 
 ### 1-5. 이항 계수(거듭제곱, 페르마의 소정리)
 
-> 페르마의 소정리
-> p가 소수고 a가 p의 배수가 아니면 a^(p - 1) = 1 (mod p)이다.
-> a^(p - 1) = 1 (mod p)
-> a * a^(p - 2) = 1 (mod p)
-> a^(p - 2) = a^-1 (mod p)
+> 페르마의 소정리   
+> p가 소수고 a가 p의 배수가 아니면 a^(p - 1) = 1 (mod p)이다.   
+> a^(p - 1) = 1 (mod p)   
+> a * a^(p - 2) = 1 (mod p)   
+> a^(p - 2) = a^-1 (mod p)   
 
-> 이항계수
-> nCk = n! / (k!(n - k)!) = n! * (k!(n - k)!)^-1
-> nCk = n! * (k!(n - k)!)^(p - 2) (mod p)
+> 이항계수   
+> nCk = n! / (k!(n - k)!) = n! * (k!(n - k)!)^-1   
+> nCk = n! * (k!(n - k)!)^(p - 2) (mod p)   
 
-시간복잡도: O(n)
+* 시간복잡도: O(n)
 
 ```cpp
 #define MOD 1000000007
@@ -178,7 +178,7 @@ matrix pow(matrix a, ll b)
 
 ### 1-7. 피보나치 수열(행렬 거듭제곱)
 
-시간복잡도: O(logn)
+* 시간복잡도: O(logn)
 
 ```cpp
 ll fibo(ll n)
