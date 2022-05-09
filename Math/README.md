@@ -78,7 +78,7 @@ int lcm(int a, int b)
 
 ### 1-4. 이항 계수(DP)
 
-시간복잡도: O(n*k)
+* 시간복잡도: O(n*k)
 
 ```cpp
 int dp[1003][1003];
