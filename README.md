@@ -18,12 +18,12 @@
     1. 이항 계수(거듭제곱, 페르마의 소정리)
     1. 행렬 거듭제곱
     1. 피보나치 수열(행렬 거듭제곱)
-0. [Graph]()
+0. [Graph](https://github.com/Eucha09/Algorithm-Note/tree/main/Graph)
     1. DFS
     1. BFS
     1. Dijkstra
     1. BellmanFord
-    1. Floyd
+    1. Floyd Warshall
     1. Kruskal
 0. Tree
 0. String

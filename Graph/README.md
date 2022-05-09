@@ -2,12 +2,12 @@
 
 ### Contens
 
-1. [DFS]()
-1. [BFS]()
-1. [Dijkstra]()
-1. [BellmanFord]()
-1. [Floyd]()
-1. [Kruskal]()
+1. [DFS](https://github.com/Eucha09/Algorithm-Note/tree/main/Graph#2-1-dfs)
+1. [BFS](https://github.com/Eucha09/Algorithm-Note/tree/main/Graph#2-2-bfs)
+1. [Dijkstra](https://github.com/Eucha09/Algorithm-Note/tree/main/Graph#2-3-dijkstra)
+1. [BellmanFord](https://github.com/Eucha09/Algorithm-Note/tree/main/Graph#2-4-bellman-ford)
+1. [Floyd Warshall](https://github.com/Eucha09/Algorithm-Note/tree/main/Graph#2-5-floyd-warshall)
+1. [Kruskal](https://github.com/Eucha09/Algorithm-Note/tree/main/Graph#2-6-kruskal)
 
 ### 2-1. DFS
 
