@@ -24,8 +24,9 @@
     1. Dijkstra
     1. BellmanFord
     1. Floyd Warshall
+0. [Tree]()
+    1. Union_Find
     1. Kruskal
-0. Tree
 0. String
 0. Geometry
 0. [C++ STL](https://github.com/Eucha09/Algorithm-Note/tree/main/C%2B%2BSTL)
