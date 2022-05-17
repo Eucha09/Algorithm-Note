@@ -2,8 +2,8 @@
 
 ### Contens
 
-1. [Union_Find]()
-1. [Kruskal]()
+1. [Union_Find](https://github.com/Eucha09/Algorithm-Note/tree/main/Tree#3-1-union_find)
+1. [Kruskal](https://github.com/Eucha09/Algorithm-Note/tree/main/Tree#3-2-kruskal)
 
 ### 3-1. Union_Find
 
