@@ -25,7 +25,7 @@
     1. BellmanFord
     1. Floyd Warshall
 0. [Tree](https://github.com/Eucha09/Algorithm-Note/tree/main/Tree)
-    1. Union_Find
+    1. Union Find
     1. Kruskal
 0. [Geometry](https://github.com/Eucha09/Algorithm-Note/tree/main/Geometry)
     1. CCW
