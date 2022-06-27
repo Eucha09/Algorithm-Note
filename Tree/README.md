@@ -148,3 +148,37 @@ struct segment_tree
 };
 ```
 
+#### x번째로 큰 원소 찾기
+
+```cpp
+struct segment_tree
+{
+	int tree[400005];
+
+	void update(int idx, int value, int node, int start, int end)
+	{
+		if (idx < start || end < idx)
+			return;
+		if (start == end)
+		{
+			tree[node] = value;
+			return;
+		}
+		int mid = start + end >> 1;
+		update(idx, value, node * 2, start, mid);
+		update(idx, value, node * 2 + 1, mid + 1, end);
+		tree[node] = tree[node * 2] + tree[node * 2 + 1];
+	}
+
+	int findx(int x, int node, int start, int end)
+	{
+		if (start == end)
+			return start;
+		int mid = start + end >> 1;
+		if (x <= tree[node * 2])
+			return findx(x, node * 2, start, mid);
+		else
+			return findx(x - tree[node * 2], node * 2 + 1, mid + 1, end);
+	}
+};
+```
