@@ -82,6 +82,8 @@ int kruskal(int n)
 
 ### 3-3. Segment Tree
 
+#### 구간 합 구하기
+
 ```cpp
 struct segment_tree
 {
