@@ -2,9 +2,9 @@
 
 ### Contens
 
-1. [Union Find](https://github.com/Eucha09/Algorithm-Note/tree/main/Tree#3-1-union_find)
+1. [Union Find](https://github.com/Eucha09/Algorithm-Note/tree/main/Tree#3-1-union-find)
 1. [Kruskal](https://github.com/Eucha09/Algorithm-Note/tree/main/Tree#3-2-kruskal)
-1. [Segment Tree]()
+1. [Segment Tree](https://github.com/Eucha09/Algorithm-Note/tree/main/Tree#3-3-segment-tree)
 
 ### 3-1. Union Find
 

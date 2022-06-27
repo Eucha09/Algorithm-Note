@@ -27,6 +27,7 @@
 0. [Tree](https://github.com/Eucha09/Algorithm-Note/tree/main/Tree)
     1. Union Find
     1. Kruskal
+    1. Segment Tree
 0. [Geometry](https://github.com/Eucha09/Algorithm-Note/tree/main/Geometry)
     1. CCW
 0. String
