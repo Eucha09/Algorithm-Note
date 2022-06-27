@@ -113,3 +113,38 @@ struct segment_tree
 	}
 };
 ```
+
+#### 구간에 수를 더하고, 한 칸의 값만 가져오는 경우
+
+```cpp
+struct segment_tree
+{
+	ll tree[4000006];
+
+	void update(int left, int right, ll value, int node, int start, int end)
+	{
+		if (right < start || end < left)
+			return;
+		if (left <= start && end <= right)
+		{
+			tree[node] += value;
+			return;
+		}
+		int mid = start + end >> 1;
+		update(left, right, value, node * 2, start, mid);
+		update(left, right, value, node * 2 + 1, mid + 1, end);
+	}
+
+	ll getx(int idx, int node, int start, int end)
+	{
+		if (idx < start || end < idx)
+			return 0;
+		if (start == end)
+			return tree[node];
+		int mid = start + end >> 1;
+		return tree[node] + getx(idx, node * 2, start, mid) 
+			+ getx(idx, node * 2 + 1, mid + 1, end);
+	}
+};
+```
+

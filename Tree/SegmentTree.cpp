@@ -1,8 +1,8 @@
 struct segment_tree
 {
-	ll tree[4000006];
+	int tree[4000006];
 
-	void update(int idx, ll value, int node, int start, int end)
+	void update(int idx, int value, int node, int start, int end)
 	{
 		if (idx < start || end < idx)
 			return;
@@ -17,7 +17,7 @@ struct segment_tree
 		tree[node] = tree[node * 2] + tree[node * 2 + 1];
 	}
 
-	ll sum(int left, int right, int node, int start, int end)
+	int sum(int left, int right, int node, int start, int end)
 	{
 		if (right < start || end < left)
 			return 0;
