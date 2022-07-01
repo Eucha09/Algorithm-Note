@@ -32,9 +32,16 @@ void union_parent(int a, int b)
 ### 3-2. Kruskal
 
 ```cpp
-struct edge{
-  int a, b;
-}
+struct edge
+{
+	ll a, b, cost;
+	bool operator<(const edge& b)const
+	{
+		return cost < b.cost;
+	}
+};
+
+vector<edge> edges;
 
 // 유니온파인드
 int parent[1000006]; // parent[i] = i로 초기화

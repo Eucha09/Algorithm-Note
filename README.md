@@ -18,6 +18,7 @@
     1. 이항 계수(거듭제곱, 페르마의 소정리)
     1. 행렬 거듭제곱
     1. 피보나치 수열(행렬 거듭제곱)
+    1. Fast Fourier Transform
 0. [Graph](https://github.com/Eucha09/Algorithm-Note/tree/main/Graph)
     1. DFS
     1. BFS
@@ -30,7 +31,9 @@
     1. Segment Tree
 0. [Geometry](https://github.com/Eucha09/Algorithm-Note/tree/main/Geometry)
     1. CCW
-0. String
+0. [String](https://github.com/Eucha09/Algorithm-Note/tree/main/String)
+    1. KMP
+    1. Trie
 0. [C++ STL](https://github.com/Eucha09/Algorithm-Note/tree/main/C%2B%2BSTL)
     1. algorithm
     1. vector

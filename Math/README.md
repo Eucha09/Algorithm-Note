@@ -9,6 +9,7 @@
 1. [이항 계수(거듭제곱, 페르마의 소정리)](https://github.com/Eucha09/Algorithm-Note/tree/main/Math#1-5-%EC%9D%B4%ED%95%AD-%EA%B3%84%EC%88%98%EA%B1%B0%EB%93%AD%EC%A0%9C%EA%B3%B1-%ED%8E%98%EB%A5%B4%EB%A7%88%EC%9D%98-%EC%86%8C%EC%A0%95%EB%A6%AC)
 1. [행렬 거듭제곱](https://github.com/Eucha09/Algorithm-Note/tree/main/Math#1-6-%ED%96%89%EB%A0%AC-%EA%B1%B0%EB%93%AD%EC%A0%9C%EA%B3%B1)
 1. [피보나치 수열(행렬 거듭제곱)](https://github.com/Eucha09/Algorithm-Note/tree/main/Math#1-7-%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98-%EC%88%98%EC%97%B4%ED%96%89%EB%A0%AC-%EA%B1%B0%EB%93%AD%EC%A0%9C%EA%B3%B1)
+1. [Fast Fourier Transform]()
 
 ### 1-1. 에라토스테네스의 체
 
@@ -193,5 +194,53 @@ ll fibo(ll n)
 	ret = pow(a, n) * b;
 
 	return ret[1][0];
+}
+```
+
+### 1-8. Fast Fourier Transform
+
+```cpp
+#include <complex>
+typedef complex<double> base;
+
+void fft(vector<base>& a, bool inv = false) {
+	int n = a.size(), j = 0;
+	vector<base> roots(n / 2);
+	for (int i = 1; i < n; i++) {
+		int bit = (n >> 1);
+		while (j >= bit) {
+			j -= bit;
+			bit >>= 1;
+		}
+		j += bit;
+		if (i < j) swap(a[i], a[j]);
+	}
+	double ang = 2 * acos(-1) / n * (inv ? -1 : 1);
+	for (int i = 0; i < n / 2; i++) {
+		roots[i] = base(cos(ang * i), sin(ang * i));
+	}
+	for (int i = 2; i <= n; i <<= 1) {
+		int step = n / i;
+		for (int j = 0; j < n; j += i) {
+			for (int k = 0; k < i / 2; k++) {
+				base u = a[j + k], v = a[j + k + i / 2] * roots[step * k];
+				a[j + k] = u + v;
+				a[j + k + i / 2] = u - v;
+			}
+		}
+	}
+	if (inv) for (int i = 0; i < n; i++) a[i] /= n;
+}
+
+vector<ll> multiply(vector<ll>& v, vector<ll>& w) {
+	vector<base> fv(v.begin(), v.end()), fw(w.begin(), w.end());
+	int n = 2; while (n < v.size() + w.size()) n <<= 1;
+	fv.resize(n); fw.resize(n);
+	fft(fv, 0); fft(fw, 0);
+	for (int i = 0; i < n; i++) fv[i] *= fw[i];
+	fft(fv, 1);
+	vector<ll> ret(n);
+	for (int i = 0; i < n; i++) ret[i] = (ll)round(fv[i].real());
+	return ret;
 }
 ```
