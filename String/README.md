@@ -2,8 +2,8 @@
 
 ### Contens
 
-1. KMP
-1. Trie
+1. [KMP](https://github.com/Eucha09/Algorithm-Note/tree/main/String#5-1-kmp)
+1. [Trie](https://github.com/Eucha09/Algorithm-Note/tree/main/String#5-2-trie)
 
 ### 5-1. KMP
 

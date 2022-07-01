@@ -9,7 +9,7 @@
 1. [이항 계수(거듭제곱, 페르마의 소정리)](https://github.com/Eucha09/Algorithm-Note/tree/main/Math#1-5-%EC%9D%B4%ED%95%AD-%EA%B3%84%EC%88%98%EA%B1%B0%EB%93%AD%EC%A0%9C%EA%B3%B1-%ED%8E%98%EB%A5%B4%EB%A7%88%EC%9D%98-%EC%86%8C%EC%A0%95%EB%A6%AC)
 1. [행렬 거듭제곱](https://github.com/Eucha09/Algorithm-Note/tree/main/Math#1-6-%ED%96%89%EB%A0%AC-%EA%B1%B0%EB%93%AD%EC%A0%9C%EA%B3%B1)
 1. [피보나치 수열(행렬 거듭제곱)](https://github.com/Eucha09/Algorithm-Note/tree/main/Math#1-7-%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98-%EC%88%98%EC%97%B4%ED%96%89%EB%A0%AC-%EA%B1%B0%EB%93%AD%EC%A0%9C%EA%B3%B1)
-1. [Fast Fourier Transform]()
+1. [Fast Fourier Transform](https://github.com/Eucha09/Algorithm-Note/tree/main/Math#1-8-fast-fourier-transform)
 
 ### 1-1. 에라토스테네스의 체
 
