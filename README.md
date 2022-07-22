@@ -31,6 +31,7 @@
     1. Segment Tree
 0. [Geometry](https://github.com/Eucha09/Algorithm-Note/tree/main/Geometry)
     1. CCW
+	1. 선분교차
 0. [String](https://github.com/Eucha09/Algorithm-Note/tree/main/String)
     1. KMP
     1. Trie

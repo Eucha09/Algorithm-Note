@@ -23,7 +23,10 @@ ll ccw(ll x1, ll y1, ll x2, ll y2, ll x3, ll y3)
 
 ### 4-2. 선분 교차
 
+#### 선분 교차 판정
+
 - 교차하면 1 출력 아니면 0 출력
+
 ```c++
 typedef long long ll;
 
@@ -52,13 +55,8 @@ ll ccw(ll x1, ll y1, ll x2, ll y2, ll x3, ll y3)
 	return 0;
 }
 
-int main()
+int isIntersection(point a, point b, point c, point d)
 {
-	point a, b, c, d;
-
-	scanf(" %lld %lld %lld %lld", &a.x, &a.y, &b.x, &b.y);
-	scanf(" %lld %lld %lld %lld", &c.x, &c.y, &d.x, &d.y);
-
 	ll abc = ccw(a.x, a.y, b.x, b.y, c.x, c.y);
 	ll abd = ccw(a.x, a.y, b.x, b.y, d.x, d.y);
 	ll cda = ccw(c.x, c.y, d.x, d.y, a.x, a.y);
@@ -71,14 +69,34 @@ int main()
 		if (d < c)
 			swap(c, d);
 		if (a <= d && c <= b)
-			printf("1\n");
+			return 1;
 		else
-			printf("0\n");
+			return 0;
 	}
 	else if (abc * abd <= 0 && cda * cdb <= 0)
-		printf("1\n");
+		return 1;
 	else
-		printf("0\n");
-	return 0;
+		return 0;
+}
+```
+
+#### 교차점 출력하기
+
+```cpp
+void print_intersection(point a, point b, point c, point d)
+{
+	ll px = (a.x*b.y - a.y*b.x)*(c.x - d.x) - (a.x - b.x)*(c.x*d.y - c.y*d.x);
+	ll py = (a.x*b.y - a.y*b.x)*(c.y - d.y) - (a.y - b.y)*(c.x*d.y - c.y*d.x);
+	ll p = (a.x - b.x) * (c.y - d.y) - (a.y - b.y) * (c.x - d.x);
+
+	if (p == 0)
+	{
+		if (a < d && c == b)
+			printf("%lld %lld\n", b.x, b.y);
+		else if (c < b && a == d)
+			printf("%lld %lld\n", a.x, a.y);
+	}
+	else
+		printf("%.12f %.12f\n", (double)px / p, (double)py / p);
 }
 ```
