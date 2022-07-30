@@ -25,10 +25,10 @@
     1. Dijkstra
     1. BellmanFord
     1. Floyd Warshall
-0. [Tree](https://github.com/Eucha09/Algorithm-Note/tree/main/Tree)
-    1. Union Find
     1. Kruskal
-    1. Segment Tree
+0. [Data_Structures](https://github.com/Eucha09/Algorithm-Note/tree/main/Data_Structures)
+	1. Union Find
+	1. Segment Tree
 0. [Geometry](https://github.com/Eucha09/Algorithm-Note/tree/main/Geometry)
     1. CCW
 	1. 선분교차

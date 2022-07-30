@@ -1,10 +1,9 @@
-## 3. Tree
+## 3. Data_Structures
 
 ### Contens
 
-1. [Union Find](https://github.com/Eucha09/Algorithm-Note/tree/main/Tree#3-1-union-find)
-1. [Kruskal](https://github.com/Eucha09/Algorithm-Note/tree/main/Tree#3-2-kruskal)
-1. [Segment Tree](https://github.com/Eucha09/Algorithm-Note/tree/main/Tree#3-3-segment-tree)
+1. [Union Find](https://github.com/Eucha09/Algorithm-Note/Data_Structures/main/Data_Structures#3-1-union-find)
+1. [Segment Tree](https://github.com/Eucha09/Algorithm-Note/Data_Structures/main/Data_Structures#3-2-segment-tree)
 
 ### 3-1. Union Find
 
@@ -29,65 +28,7 @@ void union_parent(int a, int b)
 }
 ```
 
-### 3-2. Kruskal
-
-```cpp
-struct edge
-{
-	ll a, b, cost;
-	bool operator<(const edge& b)const
-	{
-		return cost < b.cost;
-	}
-};
-
-vector<edge> edges;
-
-// 유니온파인드
-int parent[1000006]; // parent[i] = i로 초기화
-
-int find_parent(int x)
-{
-	if (parent[x] != x)
-		parent[x] = find_parent(parent[x]);
-	return parent[x];
-}
-
-void union_parent(int a, int b)
-{
-	a = find_parent(a);
-	b = find_parent(b);
-	if (a < b)
-		parent[b] = a;
-	else
-		parent[a] = b;
-}
-
-// 크루스칼
-int kruskal(int n)
-{
-	int ret = 0;
-
-	for (int i = 1; i <= n; i++)
-		parent[i] = i;
-
-	sort(edges.begin(), edges.end());
-
-	for (int i = 0; i < edges.size(); i++)
-	{
-		edge e = edges[i];
-		if (find_parent(e.a) != find_parent(e.b))
-		{
-			union_parent(e.a, e.b);
-			ret += e.cost;
-		}
-	}
-
-	return ret;
-}
-```
-
-### 3-3. Segment Tree
+### 3-2. Segment Tree
 
 #### 구간 합 구하기
 

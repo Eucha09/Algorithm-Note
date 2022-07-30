@@ -9,6 +9,7 @@
 ```cpp
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 #include <stack>
 #include <queue>
 #include <deque>

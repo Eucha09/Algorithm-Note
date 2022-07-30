@@ -7,6 +7,7 @@
 1. [Dijkstra](https://github.com/Eucha09/Algorithm-Note/tree/main/Graph#2-3-dijkstra)
 1. [BellmanFord](https://github.com/Eucha09/Algorithm-Note/tree/main/Graph#2-4-bellman-ford)
 1. [Floyd Warshall](https://github.com/Eucha09/Algorithm-Note/tree/main/Graph#2-5-floyd-warshall)
+1. [Kruskal](https://github.com/Eucha09/Algorithm-Note/tree/main/Graph#2-6-Kruskal)
 
 ### 2-1. DFS
 
@@ -163,5 +164,63 @@ void floyd(int n)
 		for (int i = 1; i <= n; i++)
 			for (int j = 1; j <= n; j++)
 				dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
+}
+```
+
+### 2-6. Kruskal
+
+```cpp
+struct edge
+{
+	ll a, b, cost;
+	bool operator<(const edge& b)const
+	{
+		return cost < b.cost;
+	}
+};
+
+vector<edge> edges;
+
+// 유니온파인드
+int parent[1000006]; // parent[i] = i로 초기화
+
+int find_parent(int x)
+{
+	if (parent[x] != x)
+		parent[x] = find_parent(parent[x]);
+	return parent[x];
+}
+
+void union_parent(int a, int b)
+{
+	a = find_parent(a);
+	b = find_parent(b);
+	if (a < b)
+		parent[b] = a;
+	else
+		parent[a] = b;
+}
+
+// 크루스칼
+int kruskal(int n)
+{
+	int ret = 0;
+
+	for (int i = 1; i <= n; i++)
+		parent[i] = i;
+
+	sort(edges.begin(), edges.end());
+
+	for (int i = 0; i < edges.size(); i++)
+	{
+		edge e = edges[i];
+		if (find_parent(e.a) != find_parent(e.b))
+		{
+			union_parent(e.a, e.b);
+			ret += e.cost;
+		}
+	}
+
+	return ret;
 }
 ```
