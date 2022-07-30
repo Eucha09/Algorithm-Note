@@ -2,8 +2,8 @@
 
 ### Contens
 
-1. [Union Find](https://github.com/Eucha09/Algorithm-Note/Data_Structures/main/Data_Structures#3-1-union-find)
-1. [Segment Tree](https://github.com/Eucha09/Algorithm-Note/Data_Structures/main/Data_Structures#3-2-segment-tree)
+1. [Union Find](https://github.com/Eucha09/Algorithm-Note/tree/main/Data_Structures#3-1-union-find)
+1. [Segment Tree](https://github.com/Eucha09/Algorithm-Note/tree/main/Data_Structures#3-2-segment-tree)
 
 ### 3-1. Union Find
 
