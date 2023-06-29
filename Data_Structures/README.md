@@ -185,7 +185,7 @@ struct segment_tree
             return 0;
         if (left <= start && end <= right)
             return tree[node];
-		int mid = start + end >> 1;
+        int mid = start + end >> 1;
         return sum_range(left, right, node * 2, start, mid) + sum_range(left, right, node * 2 + 1, mid + 1, end);
     }
 };
