@@ -2,7 +2,7 @@
 
 ### Contens
 
-1. [LIS (nlogn)](https://github.com/Eucha09/Algorithm-Note/tree/main/Other#6-1-lis-(nlogn))
+1. [LIS (nlogn)](https://github.com/Eucha09/Algorithm-Note/tree/main/Other#6-1-lis-nlogn)
 1. [Euler Tour Technique](https://github.com/Eucha09/Algorithm-Note/tree/main/Other#6-2-euler-tour-technique)
 
 ### 6-1. LIS (nlogn)

@@ -98,7 +98,7 @@ struct segment_tree
 };
 ```
 
-#### x번째로 큰 원소 찾기
+#### x번째 원소 찾기
 
 ```cpp
 struct segment_tree
