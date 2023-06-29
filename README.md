@@ -35,6 +35,9 @@
 0. [String](https://github.com/Eucha09/Algorithm-Note/tree/main/String)
     1. KMP
     1. Trie
+0. [Other](https://github.com/Eucha09/Algorithm-Note/tree/main/Other)
+    1. LIS (nlogn)
+    1. Euler Tour Technique
 0. [C++ STL](https://github.com/Eucha09/Algorithm-Note/tree/main/C%2B%2BSTL)
     1. algorithm
     1. vector
