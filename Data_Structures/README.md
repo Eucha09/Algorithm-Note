@@ -132,3 +132,61 @@ struct segment_tree
 	}
 };
 ```
+
+#### Lazy Propagation
+
+구간에 수를 더하고 구간 합을 구하는 경우
+
+```cpp
+struct segment_tree
+{
+	ll tree[4000006];
+    ll lazy[4000006];
+
+    void update_lazy(int node, int start, int end) 
+    {
+        if (lazy[node] != 0) 
+        {
+            tree[node] += (end - start + 1) * lazy[node];
+            if (start != end) 
+            {
+                lazy[node * 2] += lazy[node];
+                lazy[node * 2 + 1] += lazy[node];
+            }
+            lazy[node] = 0;
+        }
+    }
+
+    void update_range(int left, int right, ll value, int node, int start, int end) 
+    {
+        update_lazy(node, start, end);
+        if (right < start || end < left)
+            return;
+        if (left <= start && end <= right) 
+        {
+            tree[node] += (end - start + 1) * value;
+            if (start != end) 
+            {
+                lazy[node * 2] += value;
+                lazy[node * 2 + 1] += value;
+            }
+            return;
+        }
+        int mid = start + end >> 1;
+        update_range(left, right, value, node * 2, start, mid);
+        update_range(left, right, value, node * 2 + 1, mid + 1, end);
+        tree[node] = tree[node * 2] + tree[node * 2 + 1];
+    }
+
+    ll sum_range(int left, int right, int node, int start, int end)
+    {
+        update_lazy(node, start, end);
+        if (right < start || end < left)
+            return 0;
+        if (left <= start && end <= right)
+            return tree[node];
+		int mid = start + end >> 1;
+        return sum_range(left, right, node * 2, start, mid) + sum_range(left, right, node * 2 + 1, mid + 1, end);
+    }
+};
+```
