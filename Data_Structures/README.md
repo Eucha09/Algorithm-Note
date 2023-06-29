@@ -140,7 +140,7 @@ struct segment_tree
 ```cpp
 struct segment_tree
 {
-	ll tree[4000006];
+    ll tree[4000006];
     ll lazy[4000006];
 
     void update_lazy(int node, int start, int end) 
